@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LOOPYIT 브랜드 소개</title>
+
+  <!-- 외부 라이브러리 -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- 메인 CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- jQuery & Script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.28/bundled/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+
+  <!-- ✅ [1] 인트로 섹션 -->
+  <section class="main-section">
+    <header>
+      <img src="images/loopyit-logo.png" alt="Loopyit Logo" class="logo" />
+      <img src="images/main-menu.png" alt="Menu" class="menu" />
+    </header>
+
+    <div class="main-content">
+      <img src="/images/curve.png" alt="Curve" class="curve curve-left" />
+      <h1>LOOPYIT</h1>
+      <div class="slogan-wrapper">
+        <p class="slogan">
+          One day,<br />
+          one loop,<br />
+          one better you.
+        </p>
+      </div>
+      <img src="images/flower-line.png" alt="Flower Line" class="curve curve-right" />
+    </div>
+  </section>
+
+  <!-- ✅ [2] 스크롤 인터랙션 -->
+  <section class="section2">
+    <div class="text-step text-step-1">
+      <p>매일을 더 건강하게,</p>
+      <p>당신만의 맞춤형 AI 서비스</p>
+    </div>
+
+    <div class="circle">
+      <svg class="scroll-arrow" width="70" height="70" viewBox="0 0 24 24">
+        <path
+          d="M12 3v16m0 0l-5-5m5 5l5-5"
+          stroke="#fff"
+          stroke-width="2.4"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          fill="none"
+        />
+      </svg>
+    </div>
+  </section>
+
+  <section class="section3">
+    <div class="text-step-2" data-aos="fade-up" data-aos-duration="1200"data-aos-delay="300">
+      <p class="line1">
+        하루의 <span class="highlight-word h1">작은</span> 습관이
+        <span class="highlight-word h2">큰</span> 변화를 만듭니다
+      </p>
+      <p class="line2">당신만을 위한 루틴을 설계해 드려요</p>
+    </div>
+  </section>
+
+  <!-- ✅ 마우스 블러 + 트레일 -->
+  <div class="glassy-circle"></div>
+  <canvas></canvas>
+
+  <!-- ✅ [3] 기능 섹션 -->
+  <section class="sec con">
+    <section class="sec sec_wrap_1">
+      <div class="header_box">
+        <div class="header_text">Key Features</div>
+        <div class="header_underline"><img src="imgs/Line 67.png" alt="" style="width: 167px;"></div>
+        <div class="header_img">
+          <img src="imgs/sec_1_img (2).png" alt="" class="header-img-1">
+          <img src="imgs/sec_1_img (1).png" alt="" class="header-img-2">
+        </div>
+      </div>
+      <div class="fall-box"></div>
+      <div class="fall-text">
+        <div class="fall-text-1">
+          <img src="imgs/sec-1-text (1).png" alt="" style="width: 220px;" class="img normal">
+          <img src="imgs/sec_1_text (5).png" alt="" style="width: 220px;" class="img hover">
+        </div>
+        <div class="fall-text-2">
+          <img src="imgs/sec-1-text (3).png" alt="" style="width: 210px;" class="img normal">
+          <img src="imgs/sec_1_text (6).png" alt="" style="width: 210px;" class="img hover">
+        </div>
+        <div class="fall-text-3">
+          <img src="imgs/sec-1-text (2).png" alt="" style="width: 215px;" class="img normal">
+          <img src="imgs/sec_1_text (7).png" alt="" style="width: 215px;" class="img hover">
+        </div>
+        <div class="fall-text-4">
+          <img src="imgs/sec-1-text (4).png" alt="" style="width: 280px;" class="img normal">
+          <img src="imgs/sec_1_text (8).png" alt="" style="width: 280px;" class="img hover">
+        </div>
+      </div>
+      <div class="back_text">
+        <span>with,Loopyit with,Loopyit with,Loopyit with,Loopyit</span>
+        <span>with,Loopyit with,Loopyit with,Loopyit with,Loopyit</span>
+      </div>
+    </section>
+
+    <!-- ✅ Swiper 섹션 -->
+    <section class="sec sec_wrap_2">
+      <div class="cursor-shadow"></div>
+      <div class="main_title">
+        <p>
+          하루 스케줄과 컨디션에 맞춘 건강 관리<br />
+          운동 · 영양 · 식단 · 피부까지<br />
+          AI 통합 솔루션을 만나보세요.
+        </p>
+      </div>
+
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="swiper-content content_1">
+              <div class="head_title">피부 & 건강 관리</div>
+              <div class="swiper_sub_text">
+                피부 데이터와 라이프스타일을 연결해 변화를 관리하고,<br />
+                건강과 뷰티를 함께 챙기는 통합 루틴을 완성합니다.
+              </div>
+              <div class="swiper_imgs"><img src="imgs/swiper_img (2).png" alt=""></div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="swiper-content content_2">
+              <div class="head_title">운동 & 라이프스타일</div>
+              <div class="swiper_sub_text">
+                오늘의 컨디션에 맞춘 맞춤 운동을 제안하고,<br />
+                생활 패턴에 맞는 활동 루틴을 설계합니다.
+              </div>
+              <div class="swiper_imgs"><img src="imgs/swiper_img (3).png" alt=""></div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="swiper-content content_3">
+              <div class="head_title">영양제 & 성분 분석</div>
+              <div class="swiper_sub_text">
+                복용 중인 약·영양제를 통합 분석해 안전성을 확인하고,<br />
+                상호작용 위험을 줄여 최적의 선택을 안내합니다.
+              </div>
+              <div class="swiper_imgs"><img src="imgs/swiper_img (1).png" alt=""></div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="swiper-content content_4">
+              <div class="head_title">식단 & 식품 관리</div>
+              <div class="swiper_sub_text">
+                냉장고 속 재료를 활용해 균형 잡힌 식단을 설계하고,<br />
+                계절·건강 상태에 맞춘 식습관을 이어갑니다.
+              </div>
+              <div class="swiper_imgs"><img src="imgs/swiper_img (4).png" alt=""></div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+  </section>
+
+  <!-- ✅ [4] 카드 섹션 -->
+  <section class="sec sec_wrap_3">
+    <div class="sec_3_main_title">
+      <p>Wellness starts <br /> with simple choices</p>
+    </div>
+    <div class="cards-wrapper">
+      <div class="card card_1">
+        <div class="card_text">Effervescent<br />Vitamin</div>
+        <div class="sub_text">에너지 충전과 수분 보충을<br />동시에 시작하세요.</div>
+        <div class="card_img_1"><img src="imgs/card-img (2).png" alt=""></div>
+      </div>
+
+      <div class="card card_2">
+        <div class="card_text">Daily<br />vitamin</div>
+        <div class="sub_text">균형 잡힌 필수 영양소를<br />매일 섭취하세요.</div>
+        <div class="card_img_2"><img src="imgs/card-img (1).png" alt=""></div>
+      </div>
+
+      <div class="card card_3">
+        <div class="card_text">Wellness<br />Goods</div>
+        <div class="sub_text">루틴을 더 쉽고<br />즐겁게 만나보세요.</div>
+        <div class="card_img_3"><img src="imgs/card-img (3).png" alt=""></div>
+      </div>
+    </div>
+  </section>
+<!------- 리뷰섹션---------->
+  <section class="review-section">
+    <div class="review-inner">
+      <div class="review-headline">
+        <h2>건강한 습관을 만드는 리뷰들</h2>
+        <p class="sub">루피잇을 경험한 사람들이 전하는 생생한 후기</p>
+      </div>
+
+      <div class="card-stage">
+        <div class="review-card card-back">
+          <div class="avatar"></div>
+          <div class="role-line"></div>
+          <div class="name-line"></div>
+          <div class="divider"></div>
+          <div class="review-text"></div>
+        </div>
+
+        <div class="review-card card-front">
+          <div class="avatar"></div>
+          <div class="role-line"></div>
+          <div class="name-line"></div>
+          <div class="divider"></div>
+          <div class="review-text"></div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="indicator-wrapper">
+      <div class="indicator-track">
+        <button class="indicator-dot" data-index="0" aria-label="slide 1"></button>
+        <button class="indicator-dot" data-index="1" aria-label="slide 2"></button>
+        <button class="indicator-dot" data-index="2" aria-label="slide 3"></button>
+      </div>
+    </div>
+  </section>
+ <div class="bottom_txt">
+    <div class="bottom_ex_txt">데이터 기반 맞춤 추천부터<br>루틴 자동화, 웨어러블 연동까지<br>이제 하나의 서비스로 모두 해결하세요.
+    </div>
+    <a href="#" class="app_button">
+      <div class="app_txt">Get the App</div>
+      <div class="arrow_right"><img src="img/arrow_forward.png" alt=""></div>
+      </a>
+  </div>
+
+<!--------- 예빈 2st section --------->
+<div class="random_box">
+  <div class="img_box">
+    <img src="img/random_bg_black.png" alt="#">
+    <img src="img/random_bg_green.png" alt="#">
+  </div>
+  <div class="random_box_up">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</div>
+<!--------- 예빈 3st section --------->
+  <div class="close_bar">
+    <div class="close_first_txt">/ Small Habits, Big Changes.</div>
+    <div class="close_second_txt">COPYRIGHT LOOPYIT INC. ALL RIGHTS RESERVED.<br>CONTACT: +82-70-9876-5432 | support@loopyit.com | 서울특별시 강남구 테크밸리 456</div>
+    <div class="close_last_txt">LOOPYIT</div>
+    <div class="bottom_img"><img src="img/smile_bottom.png" alt="#"></div>
+  </div>
+
+
+  <!-- ✅ 메인 스크립트 -->
+  <script src="script.js"></script>
+</body>
+</html>
