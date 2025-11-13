@@ -406,6 +406,33 @@ dots.forEach(dot => {
   });
 });
 
+
+// section 3 item drop animation
+$(function () {
+  const $items = $(".fall-text-1, .fall-text-2, .fall-text-3, .fall-text-4");
+
+  // 처음에는 애니메이션 멈춰둠
+  $items.addClass("fall-paused");
+
+  $(window).on("scroll", function () {
+    const winTop = $(window).scrollTop();
+    const winH = $(window).height();
+    const trigger = winTop + winH * 0.6;
+
+    $items.each(function () {
+      const $el = $(this);
+      const elTop = $el.offset().top;
+
+      if (elTop < trigger && !$el.hasClass("fall-started")) {
+        $el.addClass("fall-started");
+        $el.removeClass("fall-paused"); // 애니메이션 재생 시작
+      }
+    });
+  });
+
+});
+
+
 // 4섹션------
 document.addEventListener('DOMContentLoaded', () => {
   const section = document.querySelector('.random_box');

@@ -165,12 +165,10 @@ header{
 
 .section3{ 
   background-color:#000; height:100vh;
-  border: 1px solid red;
   position: relative;
 }
 
 .text-step-2{
-  border: 1px solid red;
   position:sticky;  opacity:1; text-align:center;
   font-size:4.8rem; font-weight:700; color:#fff; line-height:1.8; width:100%; z-index:3;
 }
@@ -179,7 +177,7 @@ header{
    4) 기능/스와이퍼/카드 (그대로)
 ========================= */
 .sec{ width:100%; position:relative; max-width:1920px; }
-.con{ overflow:hidden; overflow-y:scroll; }
+.con{ overflow:hidden; }
 
 /* ---- Key Features ---- */
 .sec_wrap_1{
@@ -212,36 +210,32 @@ header{
   position:absolute; left:30%; top:80%; display:flex; z-index:2; gap:180px;
 }
 
-.fall-text-1{
-  animation-delay:3s; animation:drop 3s ease-out forwards; cursor:none;
+.fall-paused {
+  animation-play-state: paused !important;
 }
+
+.fall-text-1{ animation-delay:3s; animation:drop 3s ease-out forwards; cursor:none; }
 .fall-text-1 .img{ position:absolute; left:0; transition:opacity .3s ease; }
 .fall-text-1 .hover{ opacity:0; }
 .fall-text-1:hover .hover{ opacity:1; }
 
-.fall-text-2{
-  animation-delay:1s; animation:drop 5s ease-out forwards; cursor:none; z-index:4;
-}
+.fall-text-2{ animation-delay:1s; animation:drop 5s ease-out forwards; cursor:none; z-index:4; }
 .fall-text-2 .img{ position:absolute; left:0; transition:opacity .3s ease; }
 .fall-text-2 .hover{ opacity:0; }
 .fall-text-2:hover .hover{ opacity:1; }
 
-.fall-text-3{
-  animation-delay:2s; animation:drop 2s ease-out forwards; cursor:none;
-}
+.fall-text-3{ animation-delay:2s; animation:drop 2s ease-out forwards; cursor:none; }
 .fall-text-3 .img{ position:absolute; left:0; transition:opacity .3s ease; }
 .fall-text-3 .hover{ opacity:0; }
 .fall-text-3:hover .hover{ opacity:1; }
 
-.fall-text-4{
-  animation-delay:3s; animation:drop 4s ease-out forwards; cursor:none;
-}
+.fall-text-4{ animation-delay:3s; animation:drop 4s ease-out forwards; cursor:none; }
 .fall-text-4 .img{ position:absolute; left:0; transition:opacity .3s ease; }
 .fall-text-4 .hover{ opacity:0; }
 .fall-text-4:hover .hover{ opacity:1; }
 
-@keyframes drop{
-  0%{ transform: translateY(-100vh) rotate(-15deg); }
+@keyframes drop {
+  0%{ transform: translateY(-120vh) rotate(-15deg); }
   70%{ transform: translateY(10px) rotate(5deg); }
   100%{ transform: translateY(0) rotate(-7deg); }
 }
@@ -707,7 +701,6 @@ canvas {
   position:absolute;
   width:20px; height:20px;
   background:#00ff50;
-  /* border:1px solid red; */
 
   /* 천천히 등장하도록 트랜지션 확장 */
   opacity:0;
